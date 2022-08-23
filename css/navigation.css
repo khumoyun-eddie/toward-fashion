@@ -1,0 +1,119 @@
+.navigation {
+  flex-basis: 100%;
+  padding: 4rem 4rem 2.4rem 4rem;
+  color: var(--color-secondary-light);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 6rem;
+}
+.navigation__search-box {
+  position: relative;
+}
+.navigation__input {
+  border: none;
+  border-bottom: 1px solid var(--color-primary);
+  outline: none;
+  padding-bottom: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.navigation__input::placeholder {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+}
+.icon-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.navigation__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 2.1rem;
+  margin-top: 2.4rem;
+}
+.navigation__item {
+  position: relative;
+}
+.navigation__item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 15px;
+}
+.navigation__user {
+  display: flex;
+  align-items: center;
+  column-gap: 2.5rem;
+}
+.navigation__logo {
+  /* justify-self: center; */
+  margin: 0 auto;
+}
+
+.navigation__mobile-menu {
+  display: none;
+  position: relative;
+}
+.marquee {
+  width: 100%;
+  padding: 0.8rem 7.4rem;
+  overflow: hidden;
+  position: relative;
+  height: 2.8rem;
+  background-color: var(--color-secondary-light);
+}
+.marquee__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  height: 2.8rem;
+  overflow: hidden;
+}
+.marquee__list {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  width: 200%;
+  animation: marqueeLeft 25s linear infinite;
+  position: absolute;
+}
+.marquee__item:not(:last-child)::after {
+  content: '\2022';
+  margin-left: 2rem;
+  margin-right: 2rem;
+  letter-spacing: 0.09em;
+  font-size: 1rem;
+  font-weight: 500;
+}
+@keyframes marqueeLeft {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+/* 600 / 16 = 37.5em */
+@media only screen and (max-width: 37.5em) {
+  .navigation {
+    justify-content: space-between;
+  }
+  .navigation__mobile-menu{
+    display: block;
+  }
+  .navigation__search-box,
+  .navigation__list, .navigation__user {
+    display: none;
+  }
+
+}

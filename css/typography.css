@@ -1,0 +1,60 @@
+.heading-text {
+  line-height: 1;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.heading-1 {
+  font-size: 7.2rem;
+}
+.heading-1--light {
+  color: var(--color-secondary);
+}
+.heading-2 {
+  font-size: 4.8rem;
+}
+.heading-2--light {
+  color: var(--color-primary-light);
+}
+.heading-3 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-transform: none;
+}
+.heading-3--light {
+  color: var(--color-secondary-light);
+}
+.heading-4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.heading-4--light {
+  color: var(--color-secondary-light);
+}
+.heading-5 {
+  font-size: 1.4rem;
+}
+.heading-6{
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.205em;
+}
+.heading-6--light{
+  font-weight: 300;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-1 {
+    font-size: 5rem;
+  }
+  .heading-2 {
+    font-size: 3.375rem;
+  }
+  .heading-3 {
+    font-size: 2.5rem;
+  }
+  .heading-4 {
+    font-size: 2rem;
+  }
+  .heading-5 {
+  }
+}

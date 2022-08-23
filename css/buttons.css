@@ -1,0 +1,11 @@
+.btn {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.btn::after {
+  content: url(../assets/icons/icon-arrowR.svg);
+  display: inline-block;
+  margin-left: 1rem;
+}
