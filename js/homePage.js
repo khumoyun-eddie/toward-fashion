@@ -1,25 +1,28 @@
-let init = false;
-swiper = new Swiper('.swiper', {
-    slidesPerView: '4',
-    spaceBetween: 32,
-  });
-function swiperCard() {
-  if (window.innerWidth <= 600) {
-    if (!init) {
-      init = true;
-      swiper.destroy()
-      swiper = new Swiper('.swiper', {
-        slidesPerView: '2',
-        spaceBetween: 32,
-        navigation: {
-            nextEl: ".designers__slider-button-next",
-            prevEl: ".designers__slider-button-prev",
-          },
-      });
-    }
-  } else if (init) {
-    init = false;
+swiper1 = new Swiper('.showcase__slider', {
+  slidesPerView: 2,
+  slidesPerColumn: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".showcase-button-next",
+    prevEl: ".showcase-button-prev"
   }
-}
-swiperCard();
-window.addEventListener('resize', swiperCard);
+});
+
+swiper2 = new Swiper('.swiper2', {
+  slidesPerView: '4',
+  spaceBetween: 32,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  on: {
+    init: function () {},
+    resize: function (e) {
+      if (e.width <= 600) {
+        swiper2.params.slidesPerView = '2';
+      } else {
+        swiper2.params.slidesPerView = '4';
+      }
+    },
+  },
+});
