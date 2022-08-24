@@ -1,4 +1,54 @@
 @import '../style.css';
+/* Best Sellers section */
+.bestSellers {
+  display: grid;
+  grid-template-columns: 45rem 55rem;
+  justify-content: center;
+  column-gap: 12rem;
+  row-gap: 6.5rem;
+  padding: 8rem 0;
+}
+.bestSellers__header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.bestSellers__header h2 {
+  margin-top: 1rem;
+}
+.bestSellers__card--small {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.bestSellers__card--large {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.bestSellers__img {
+  width: 100%;
+  margin-bottom: 1.7rem;
+}
+.bestSellers__card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 37.5em) {
+  .bestSellers {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    padding: 5rem 2rem;
+  }
+  .bestSellers__header h2 {
+    width: 80%;
+  }
+  .bestSellers__card--large {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .bestSellers__card--small {
+    grid-row: 2/3;
+  }
+}
 
 /* Mission section */
 .mission {
@@ -26,7 +76,46 @@
     margin-bottom: 4rem;
   }
 }
+/* Seasonal section */
+/* Designers section */
+.designers {
+  padding: 4rem 4rem 8rem 4rem;
+  text-align: center;
+}
+.designers__header {
+  margin-bottom: 3.7rem;
+}
+.designers h2 {
+  margin-top: 8px;
+}
+.designers__img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.swiper-wrapper {
+  height: fit-content !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+@media only screen and (max-width: 37.5em) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: var(--color-secondary-light);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 
+  }
+  .swiper-button-prev::after {
+    content: url(../../assets/icons/icon-arrowLT.svg) !important;
+  }
+
+  .swiper-button-next::after {
+    content: url(../../assets/icons/icon-arrowRT.svg) !important;
+  }
+}
 /* Section Blog */
 .blog {
   display: flex;
@@ -70,10 +159,10 @@
 }
 
 @media only screen and (max-width: 37.5em) {
-    .blog{
-        padding: 5rem 2rem;
-        row-gap: 4rem;
-    }
+  .blog {
+    padding: 5rem 2rem;
+    row-gap: 4rem;
+  }
   .blog,
   .blog__content {
     flex-wrap: wrap;
@@ -83,13 +172,13 @@
   .blog__card {
     width: 100%;
   }
-  .blog__header{
+  .blog__header {
     text-align: center;
   }
-  .blog__content{
-    row-gap:2.5rem ;
+  .blog__content {
+    row-gap: 2.5rem;
   }
-  .blog__header h2{
+  .blog__header h2 {
     width: 100%;
     margin: 0;
     margin-bottom: 2rem;

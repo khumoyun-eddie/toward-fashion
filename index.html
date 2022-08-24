@@ -4,6 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/home/homePage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="js/homePage.js"></script>
     <title>Toward - Home Page</title>
   </head>
   <body>
@@ -106,6 +113,34 @@
         </div>
       </header>
       <main>
+        <section class="bestSellers">
+          <div class="bestSellers__header">
+            <h4 class="heading-text heading-4">best sellers</h4>
+            <h2 class="heading-text heading-2">Selected Collections</h2>
+          </div>
+          <div class="bestSellers__card bestSellers__card--small">
+            <img
+              src="assets/woman-clothing.png"
+              class="bestSellers__img"
+              alt=""
+            />
+            <div class="bestSellers__card-content">
+              <h3 class="heading-text heading-3">Luxe Facial</h3>
+              <a href="#" class="btn">shop now</a>
+            </div>
+          </div>
+          <div class="bestSellers__card bestSellers__card--large">
+            <img
+              src="assets/close-up-photo.png"
+              class="bestSellers__img"
+              alt=""
+            />
+            <div class="bestSellers__card-content">
+              <h3 class="heading-text heading-3">The Spring Edit</h3>
+              <a href="#" class="btn">shop now</a>
+            </div>
+          </div>
+        </section>
         <section class="mission">
           <h6 class="heading-text heading-6">our mission</h6>
           <h3 class="heading-text heading-3">
@@ -113,6 +148,50 @@
             dolore magna aliqua.
           </h3>
           <a href="#" class="btn">Sustainability Initiative</a>
+        </section>
+        <section class="designers">
+          <div class="designers__header">
+            <h6 class="heading-text heading-6">editor's pick</h6>
+            <h2 class="heading-text heading-2">our favourite designers</h2>
+          </div>
+          <div class="designers__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide designers__card">
+                <img
+                  src="assets/outdoor-hight-fashion.png"
+                  class="designers__img"
+                  alt=""
+                />
+                <h4 class="designers__title">Gucci</h4>
+              </div>
+              <div class="swiper-slide designers__card">
+                <img
+                  src="assets/AW.jpg"
+                  class="designers__img"
+                  alt=""
+                />
+                <h4 class="designers__title">Alexander Wang</h4>
+              </div>
+              <div class="swiper-slide designers__card">
+                <img
+                  src="assets/TW_Designers_SM.jpg"
+                  class="designers__img"
+                  alt=""
+                />
+                <h4 class="designers__title">Stella McCartney</h4>
+              </div>
+              <div class="swiper-slide designers__card">
+                <img
+                  src="assets/TW_Designers_Chloe.jpg"
+                  class="designers__img"
+                  alt=""
+                />
+                <h4 class="designers__title">Chloé</h4>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </section>
         <section class="blog">
           <div class="blog__header">
@@ -133,19 +212,22 @@
             <div class="blog__card">
               <img src="assets/Article image 2.jpg" class="blog__img" alt="" />
               <h6 class="heading-text heading-6 heading-6--light">fashion</h6>
-              <h4 class="blog__title">5 Responsible Brands Making the Coziest Loungue Wear</h4>
+              <h4 class="blog__title">
+                5 Responsible Brands Making the Coziest Loungue Wear
+              </h4>
               <p class="blog__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor
               </p>
               <a href="#" class="btn">read more</a>
             </div>
             <div class="blog__card">
               <img src="assets/Article image 3.jpg" class="blog__img" alt="" />
               <h6 class="heading-text heading-6 heading-6--light">fashion</h6>
-              <h4 class="blog__title">7 Winter Wardrobe Essentials to buy Now</h4>
-              <p class="blog__text">
-                Lorem ipsum dolor sit amet, consectetur
-              </p>
+              <h4 class="blog__title">
+                7 Winter Wardrobe Essentials to buy Now
+              </h4>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur</p>
               <a href="#" class="btn">read more</a>
             </div>
           </div>
@@ -180,7 +262,7 @@
           The only way to discover exclusive deals, new product launches and
           more
         </p>
-        <img src="assets/icons/gift-box.svg" alt="" class="footer__icon-gift" />
+
       </footer>
     </div>
   </body>
