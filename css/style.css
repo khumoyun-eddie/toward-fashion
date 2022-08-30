@@ -6,7 +6,6 @@
 @import 'navigation.css';
 @import 'productCard.css';
 @import 'footer.css';
-@import 'cart.css';
 
 :root {
   --color-primary: #000;
@@ -36,8 +35,38 @@ body {
   font-weight: 500;
   line-height: 15px;
 }
+
+
+.swiper-button-next, .swiper-button-prev{
+  color: var(--color-primary) !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 30px;
+}
+.swiper-button-prev::after {
+  content: url(../../assets/icons/icon-arrowLTT.svg) !important;
+}
+
+.swiper-button-next::after {
+  content: url(../../assets/icons/icon-arrowRTT.svg) !important;
+}
+
+
 @media only screen and (max-width: 37.5em) {
   html {
     font-size: 50%;
+  }
+  .swiper-button-prev::after {
+    content: url(../../assets/icons/icon-arrowLT.svg) !important;
+  }
+  
+  .swiper-button-next::after {
+    content: url(../../assets/icons/icon-arrowRT.svg) !important;
   }
 }

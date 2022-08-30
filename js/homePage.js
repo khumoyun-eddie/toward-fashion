@@ -24,7 +24,7 @@ swiper1 = new Swiper('.showcase__swiper', {
   },
 });
 
-swiper2 = new Swiper('.swiper2', {
+swiper2 = new Swiper('.designers__slider', {
   slidesPerView: '4',
   spaceBetween: 32,
   navigation: {
@@ -59,5 +59,14 @@ swiper3 = new Swiper('.newArrivals__slider', {
       slidesPerView: 1,
       spaceBetween: 20,
     },
+  },
+});
+
+swiper4 = new Swiper('.perfumes__swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
   },
 });

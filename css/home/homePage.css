@@ -122,32 +122,93 @@
     margin-bottom: 4rem;
   }
 }
+/* Perfumes section */
+.perfumes {
+  text-align: center;
+  padding: 4rem;
+}
+.perfumes__header {
+  margin-bottom: 3rem;
+}
+.perfumes__header h2 {
+  margin-top: 8px;
+}
+.perfumes__img {
+  width: 100%;
+}
+.perfumes__swiper .swiper-wrapper {
+  height: 65rem;
+}
+.perfumes__swiper .swiper-wrapper .swiper-slide:nth-child(1) {
+  width: 70%;
+}
+.perfumes__swiper .swiper-wrapper .swiper-slide:not(:first-child) {
+  width: 32%;
+}
+.perfumes__swiper .product__card .product__header {
+  height: 80%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .perfumes {
+    padding: 2rem;
+  }
+  .perfumes__swiper .swiper-wrapper {
+    height: fit-content;
+  }
+  .perfumes__swiper .swiper-wrapper .swiper-slide:nth-child(1) {
+    width: 100%;
+  }
+  .perfumes__swiper .swiper-wrapper .swiper-slide:not(:first-child) {
+    width: 30%;
+  }
+  .perfumes__swiper .swiper-button-next,
+  .perfumes__swiper .swiper-button-prev {
+    background-color: var(--color-secondary-light);
+  }
+}
+
 /* Seasonal section */
 .showcase {
   text-align: center;
   height: fit-content;
   padding: 8rem 13rem 0;
 }
+.showcase__header h2 {
+  margin-top: 8px;
+}
 .showcase__content {
   width: 100%;
   margin: 4.8rem auto;
   display: grid;
-  grid-template-columns: 35% 45%;
-  justify-content: space-between;
-
+  grid-template-columns: 45rem 45rem;
+  column-gap: 16rem;
+  justify-content: center;
 }
 .showcase__slider {
+  grid-column: 1/2;
+  grid-row: 1/2;
   width: 100%;
   height: 71rem;
+}
+.showcase__slider--1 {
+  grid-column: 2/2;
+  grid-row: 1/2;
 }
 .showcase__swiper {
   height: 100%;
   width: 100%;
+  overflow-x: visible;
 }
 .showcase__banner {
+  grid-column: 2/3;
   width: 100%;
   height: 100%;
   text-align: end;
+}
+.showcase__banner--1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 .showcase__banner-img {
   width: 100%;
@@ -163,17 +224,25 @@
 }
 
 @media only screen and (max-width: 37.5em) {
-    .showcase{
-        padding: 5rem 2rem;
-    }
+  .showcase {
+    padding: 5rem 2rem;
+  }
   .showcase__content {
-    grid-template-columns: 1fr;
+    display: block;
+    margin: auto;
   }
   .showcase__banner {
-    grid-row: 1/2;
+    margin-top: 2rem;
+  }
+  .showcase__banner .btn {
+    display: none;
   }
   .showcase__slider {
-    grid-row: 2/3;
+    /* grid-row: 2/3; */
+    height: 35.75rem;
+  }
+  .showcase__banner-img {
+    height: 40rem;
   }
 }
 

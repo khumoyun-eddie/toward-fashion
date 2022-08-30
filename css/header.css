@@ -80,8 +80,12 @@
     width: 100%;
     padding: 2rem 2.25rem;
   }
+  
   .header__text {
     display: none;
+  }
+  .header__cta h1 {
+    margin-bottom: 2.5rem;
   }
   .header__content--small {
     background-image: url(../assets/mobile/couple-winter-cloths-studio\ 1.png);

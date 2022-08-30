@@ -45,6 +45,9 @@
 .heading-6--light{
   font-weight: 300;
 }
+.heading-6--white{
+  color: var(--color-secondary);
+}
 .bold-text{
   font-size: 1.6rem;
   font-weight: 700;
@@ -64,5 +67,6 @@
     font-size: 2rem;
   }
   .heading-5 {
+    font-size: 1.75rem;
   }
 }

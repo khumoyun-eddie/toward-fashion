@@ -63,6 +63,13 @@
   max-height: 100%;
 }
 
+.swiper-pagination-bullet{
+  background-color: var(--color-secondary) !important;
+  border: 1px solid var(--color-option-1);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary) !important;
+}
 @media only screen and (max-width: 37.5em) {
   .swiper--thumbs{
     display: none;

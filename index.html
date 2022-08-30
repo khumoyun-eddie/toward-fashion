@@ -8,7 +8,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    ></script>
 
     <script defer src="js/homePage.js"></script>
     <title>Toward - Home Page</title>
@@ -83,20 +86,18 @@
             </li>
           </ul>
         </nav>
-
         <div class="marquee">
-          <div class="marquee__wrapper">
-            <ul class="marquee__list">
-              <li class="marquee__item">New arrivals</li>
-              <li class="marquee__item">Our spring/summer baG collectioin</li>
-              <li class="marquee__item">Sustainable fashion</li>
-              <li class="marquee__item">Best beauty products</li>
-              <li class="marquee__item">Night time skin routine</li>
-              <li class="marquee__item">comfort & style</li>
-              <li class="marquee__item">Just in high heels</li>
-            </ul>
-          </div>
+          <ul class="marquee__list">
+            <li class="marquee__item">New arrivals</li>
+            <li class="marquee__item">Our spring/summer baG collectioin</li>
+            <li class="marquee__item">Sustainable fashion</li>
+            <li class="marquee__item">Best beauty products</li>
+            <li class="marquee__item">Night time skin routine</li>
+            <li class="marquee__item">comfort & style</li>
+            <li class="marquee__item">Just in high heels</li>
+          </ul>
         </div>
+
         <div class="header__content">
           <div class="header__cta">
             <h4 class="heading-text heading-4">what's new</h4>
@@ -122,7 +123,7 @@
             </p>
             <a href="#" class="btn">shop now</a>
           </div>
-          <div class="newArrivals__slider">
+          <div class="newArrivals__slider swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide product__card">
                 <div class="product__header">
@@ -133,7 +134,7 @@
                   />
                   <img
                     src="assets/icons/icon-like.svg"
-                    class="products__icon-nav"
+                    class="product__icon-nav"
                     alt=""
                   />
                 </div>
@@ -150,7 +151,7 @@
                   />
                   <img
                     src="assets/icons/icon-like.svg"
-                    class="products__icon-nav"
+                    class="product__icon-nav"
                     alt=""
                   />
                 </div>
@@ -167,7 +168,7 @@
                   />
                   <img
                     src="assets/icons/icon-like.svg"
-                    class="products__icon-nav"
+                    class="product__icon-nav"
                     alt=""
                   />
                 </div>
@@ -184,7 +185,7 @@
                   />
                   <img
                     src="assets/icons/icon-like.svg"
-                    class="products__icon-nav"
+                    class="product__icon-nav"
                     alt=""
                   />
                 </div>
@@ -201,7 +202,7 @@
                   />
                   <img
                     src="assets/icons/icon-like.svg"
-                    class="products__icon-nav"
+                    class="product__icon-nav"
                     alt=""
                   />
                 </div>
@@ -218,7 +219,7 @@
                   />
                   <img
                     src="assets/icons/icon-like.svg"
-                    class="products__icon-nav"
+                    class="product__icon-nav"
                     alt=""
                   />
                 </div>
@@ -227,8 +228,8 @@
                 <p class="product__text">$879.00</p>
               </div>
             </div>
-            <div class="newArrivals-button-next"></div>
-            <div class="newArrivals-button-prev"></div>
+            <div class="newArrivals-button-next swiper-button-next"></div>
+            <div class="newArrivals-button-prev swiper-button-prev"></div>
           </div>
         </section>
         <section class="bestSellers">
@@ -269,93 +270,254 @@
         </section>
         <section class="showcase">
           <div class="showcase__header">
+            <h6 class="heading-text heading-6">new in</h6>
+            <h2 class="heading-text heading-2">spring dresses</h2>
+          </div>
+          <div class="showcase__content">
+            <div class="showcase__banner showcase__banner--1">
+              <picture>
+                <source
+                  srcset="./assets/mobile/beautiful-asian-woman.png"
+                  media="(max-width: 37.5em)"
+                />
+                <img
+                  src="assets/beautiful-asian-woman.png"
+                  class="showcase__banner-img"
+                  alt=""
+                />
+              </picture>
+              <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="showcase__slider showcase__slider--1">
+              <div class="showcase__swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide product__card">
+                    <div class="product__header">
+                      <img
+                        src="assets/product-image-1.png"
+                        class="product__img"
+                        alt=""
+                      />
+                      <img
+                        src="assets/icons/icon-like.svg"
+                        class="product__icon-nav"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="heading-text heading-5">brand Name</h4>
+                    <p class="product__text">Zipper Mini Dress</p>
+                    <p class="product__text">$879.00</p>
+                  </div>
+                  <div class="swiper-slide product__card">
+                    <div class="product__header">
+                      <img
+                        src="assets/product-image-2.png"
+                        class="product__img"
+                        alt=""
+                      />
+                      <img
+                        src="assets/icons/icon-like.svg"
+                        class="product__icon-nav"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="heading-text heading-5">brand Name</h4>
+                    <p class="product__text">Zipper Mini Dress</p>
+                    <p class="product__text">$879.00</p>
+                  </div>
+                  <div class="swiper-slide product__card">
+                    <div class="product__header">
+                      <img
+                        src="assets/product-image-3.png"
+                        class="product__img"
+                        alt=""
+                      />
+                      <img
+                        src="assets/icons/icon-like.svg"
+                        class="product__icon-nav"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="heading-text heading-5">brand Name</h4>
+                    <p class="product__text">Zipper Mini Dress</p>
+                    <p class="product__text">$879.00</p>
+                  </div>
+                  <div class="swiper-slide product__card">
+                    <div class="product__header">
+                      <img
+                        src="assets/product-image-1.png"
+                        class="product__img"
+                        alt=""
+                      />
+                      <img
+                        src="assets/icons/icon-like.svg"
+                        class="product__icon-nav"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="heading-text heading-5">brand Name</h4>
+                    <p class="product__text">Zipper Mini Dress</p>
+                    <p class="product__text">$879.00</p>
+                  </div>
+                </div>
+                <div class="showcase-button-next swiper-button-next"></div>
+                <div class="showcase-button-prev swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="perfumes">
+          <div class="perfumes__header">
+            <h6 class="heading-text heading-6">FROM THE EDITOR’S DESK</h6>
+            <h2 class="heading-text heading-2">Classic Scents by Chanel</h2>
+          </div>
+          <div class="perfumes__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="perfumes__img-box">
+                  <img src="assets/gorgeous-bright-couple.png" class="perfumes__img" alt="">
+                </div>
+              </div>
+
+              <div class="swiper-slide product__card">
+                <div class="product__header">
+                  <img src="assets/chanel.png" class="product__img" alt="" />
+                  <img
+                    src="assets/icons/icon-like.svg"
+                    class="product__icon-nav"
+                    alt=""
+                  />
+                </div>
+                <h4 class="heading-text heading-5">Chanel</h4>
+                <p class="product__text">Eau de Parfum</p>
+                <p class="product__text">$879.00</p>
+              </div>
+              <div class="swiper-slide product__card">
+                <div class="product__header">
+                  <img src="assets/chanel.png" class="product__img" alt="" />
+                  <img
+                    src="assets/icons/icon-like.svg"
+                    class="product__icon-nav"
+                    alt=""
+                  />
+                </div>
+                <h4 class="heading-text heading-5">Chanel</h4>
+                <p class="product__text">Eau de Parfum</p>
+                <p class="product__text">$879.00</p>
+              </div>
+              <div class="swiper-slide product__card">
+                <div class="product__header">
+                  <img src="assets/chanel.png" class="product__img" alt="" />
+                  <img
+                    src="assets/icons/icon-like.svg"
+                    class="product__icon-nav"
+                    alt=""
+                  />
+                </div>
+                <h4 class="heading-text heading-5">Chanel</h4>
+                <p class="product__text">Eau de Parfum</p>
+                <p class="product__text">$879.00</p>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </section>
+        <section class="showcase">
+          <div class="showcase__header">
             <h6 class="heading-text heading-6">seasonal</h6>
             <h2 class="heading-text heading-2">floral edit</h2>
           </div>
-          <div class="showcase__content">  
-            <div class="showcase__slider">
-           <div class="showcase__swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide product__card">
-                <div class="product__header">
-                  <img
-                    src="assets/product-image-1.png"
-                    class="product__img"
-                    alt=""
-                  />
-                  <img
-                    src="assets/icons/icon-like.svg"
-                    class="products__icon-nav"
-                    alt=""
-                  />
-                </div>
-                <h4 class="heading-text heading-5">brand Name</h4>
-                <p class="product__text">Zipper Mini Dress</p>
-                <p class="product__text">$879.00</p>
-              </div>
-              <div class="swiper-slide product__card">
-                <div class="product__header">
-                  <img
-                    src="assets/product-image-2.png"
-                    class="product__img"
-                    alt=""
-                  />
-                  <img
-                    src="assets/icons/icon-like.svg"
-                    class="products__icon-nav"
-                    alt=""
-                  />
-                </div>
-                <h4 class="heading-text heading-5">brand Name</h4>
-                <p class="product__text">Zipper Mini Dress</p>
-                <p class="product__text">$879.00</p>
-              </div>
-              <div class="swiper-slide product__card">
-                <div class="product__header">
-                  <img
-                    src="assets/product-image-3.png"
-                    class="product__img"
-                    alt=""
-                  />
-                  <img
-                    src="assets/icons/icon-like.svg"
-                    class="products__icon-nav"
-                    alt=""
-                  />
-                </div>
-                <h4 class="heading-text heading-5">brand Name</h4>
-                <p class="product__text">Zipper Mini Dress</p>
-                <p class="product__text">$879.00</p>
-              </div>
-              <div class="swiper-slide product__card">
-                <div class="product__header">
-                  <img
-                    src="assets/product-image-1.png"
-                    class="product__img"
-                    alt=""
-                  />
-                  <img
-                    src="assets/icons/icon-like.svg"
-                    class="products__icon-nav"
-                    alt=""
-                  />
-                </div>
-                <h4 class="heading-text heading-5">brand Name</h4>
-                <p class="product__text">Zipper Mini Dress</p>
-                <p class="product__text">$879.00</p>
-              </div>
-            </div>
-            <div class="showcase-button-next swiper-button-next"></div>
-            <div class="showcase-button-prev swiper-button-prev"></div>
-           </div>
-            </div>
+          <div class="showcase__content">
             <div class="showcase__banner">
-              <img
-                src="assets/flat-lay-set-feminine.png"
-                class="showcase__banner-img"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="./assets/mobile/flat-lay-set-feminine.png"
+                  media="(max-width: 37.5em)"
+                />
+                <img
+                  src="assets/flat-lay-set-feminine.png"
+                  class="showcase__banner-img"
+                  alt=""
+                />
+              </picture>
               <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="showcase__slider">
+              <div class="showcase__swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide product__card">
+                    <div class="product__header">
+                      <img
+                        src="assets/product-image-1.png"
+                        class="product__img"
+                        alt=""
+                      />
+                      <img
+                        src="assets/icons/icon-like.svg"
+                        class="product__icon-nav"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="heading-text heading-5">brand Name</h4>
+                    <p class="product__text">Zipper Mini Dress</p>
+                    <p class="product__text">$879.00</p>
+                  </div>
+                  <div class="swiper-slide product__card">
+                    <div class="product__header">
+                      <img
+                        src="assets/product-image-2.png"
+                        class="product__img"
+                        alt=""
+                      />
+                      <img
+                        src="assets/icons/icon-like.svg"
+                        class="product__icon-nav"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="heading-text heading-5">brand Name</h4>
+                    <p class="product__text">Zipper Mini Dress</p>
+                    <p class="product__text">$879.00</p>
+                  </div>
+                  <div class="swiper-slide product__card">
+                    <div class="product__header">
+                      <img
+                        src="assets/product-image-3.png"
+                        class="product__img"
+                        alt=""
+                      />
+                      <img
+                        src="assets/icons/icon-like.svg"
+                        class="product__icon-nav"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="heading-text heading-5">brand Name</h4>
+                    <p class="product__text">Zipper Mini Dress</p>
+                    <p class="product__text">$879.00</p>
+                  </div>
+                  <div class="swiper-slide product__card">
+                    <div class="product__header">
+                      <img
+                        src="assets/product-image-1.png"
+                        class="product__img"
+                        alt=""
+                      />
+                      <img
+                        src="assets/icons/icon-like.svg"
+                        class="product__icon-nav"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="heading-text heading-5">brand Name</h4>
+                    <p class="product__text">Zipper Mini Dress</p>
+                    <p class="product__text">$879.00</p>
+                  </div>
+                </div>
+                <div class="showcase-button-next swiper-button-next"></div>
+                <div class="showcase-button-prev swiper-button-prev"></div>
+              </div>
             </div>
           </div>
         </section>
@@ -440,34 +602,57 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__socials">
-          <img
-            src="assets/icons/icon-instagram.svg"
-            class="footer__icon"
-            alt=""
-          />
-          <img
-            src="assets/icons/icon-facebook.svg"
-            class="footer__icon"
-            alt=""
-          />
+        <div class="footer__header">
+          <h4 class="heading-text heading-4 heading-4--light">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </h4>
         </div>
-        <div class="footer__contact">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="footer__input"
-            placeholder="Write your email ..."
-          />
-          <label for="email">
-            <a href="#" class="btn btn--small btn--light">Join the family</a>
-          </label>
+        <div class="footer__signup">
+          <h6 class="heading-text heading-6 heading-6--white">
+            Sign up for toward updates
+          </h6>
+          <p class="footer__text">
+            Receiving our newsletter with access to our latest collections,
+            events and news.
+          </p>
+          <form class="footer__form">
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="footer__input"
+            />
+            <img
+              src="assets/icons/icon-arrowR-light.svg"
+              class="footer__icon-arrow"
+              alt=""
+            />
+          </form>
+          <div class="footer__socials">
+            <img
+              src="./assets/icons/icon-instagram.svg"
+              class="footer__icons-social"
+              alt=""
+            />
+            <img
+              src="./assets/icons/icon-facebook.svg"
+              class="footer__icons-social"
+              alt=""
+            />
+          </div>
         </div>
-        <p class="footer__text">
-          The only way to discover exclusive deals, new product launches and
-          more
-        </p>
+        <ul class="footer__list footer__list--1">
+          <h6 class="heading-text heading-6 heading-6--white">customer care</h6>
+          <li class="footer__list-item">FAQ</li>
+          <li class="footer__list-item">Shipping & Returns</li>
+          <li class="footer__list-item">Contact</li>
+        </ul>
+        <ul class="footer__list footer__list--2">
+          <h6 class="heading-text heading-6 heading-6--white">company</h6>
+          <li class="footer__list-item">About Us</li>
+          <li class="footer__list-item">Journal</li>
+          <li class="footer__list-item">Press</li>
+        </ul>
+        <div class="footer__credit">&copy; 2021 Toward Brand</div>
       </footer>
     </div>
   </body>

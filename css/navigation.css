@@ -67,34 +67,42 @@
   position: relative;
 }
 .marquee {
-  width: 100%;
-  padding: 0.8rem 7.4rem;
-  overflow: hidden;
-  position: relative;
-  height: 2.8rem;
-  background-color: var(--color-secondary-light);
-}
-.marquee__wrapper {
-  width: 90%;
-  margin: 0 auto;
-  height: 2.8rem;
-  overflow: hidden;
-}
-.marquee__list {
-  list-style: none;
-  text-transform: uppercase;
+  height: 33px;
+  margin-top: 2.5rem;
   display: flex;
-  width: 200%;
-  animation: marqueeLeft 25s linear infinite;
-  position: absolute;
+  justify-content: center;
+  background-color: var(--color-secondary-light);
+  padding: 0.5rem;
+  /* width: 100vw; */
+  overflow: scroll;
+  -ms-overflow-style: none;
+}
+.marquee::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.marquee__list {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+  list-style: none;
+  flex-wrap: nowrap;
+}
+.marquee__item{
+  width: max-content;
+  /* font-family: var(--font-primary); */
+
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.09em;
+  text-align: center;
+  text-transform: uppercase;
 }
 .marquee__item:not(:last-child)::after {
   content: '\2022';
   margin-left: 2rem;
   margin-right: 2rem;
-  letter-spacing: 0.09em;
-  font-size: 1rem;
-  font-weight: 500;
 }
 @keyframes marqueeLeft {
   0% {
@@ -105,17 +113,62 @@
   }
 }
 
+/* ------------------- NAVIGATION BREAD CRUMP --------------------- */
+.navigation__breadcrump {
+  height: 33px;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-secondary-light);
+  padding: 0.5rem;
+  /* width: 100vw; */
+  overflow: scroll;
+  -ms-overflow-style: none;
+}
+.navigation__breadcrump::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+.list--breadcrump {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+  list-style: none;
+  flex-wrap: nowrap;
+}
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.list__item--breadcrump {
+  width: max-content;
+  /* font-family: var(--font-primary); */
+
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.09em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* 600 / 16 = 37.5em */
 @media only screen and (max-width: 37.5em) {
   .navigation {
     justify-content: space-between;
   }
-  .navigation__mobile-menu{
+  .navigation__mobile-menu {
     display: block;
   }
   .navigation__search-box,
-  .navigation__list, .navigation__user {
+  .navigation__list,
+  .navigation__user {
     display: none;
   }
-
+  .marquee__list{
+    animation: scrollText 10s linear infinite;
+  }
 }
