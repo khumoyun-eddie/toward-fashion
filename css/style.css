@@ -4,18 +4,19 @@
 @import 'buttons.css';
 @import 'header.css';
 @import 'navigation.css';
-@import 'products.css';
+@import 'productCard.css';
 @import 'footer.css';
 @import 'cart.css';
 
-
 :root {
-  --color-primary:#000;
-  --color-primary-light:#292929;
-  --color-secondary:#fff;
-  --color-secondary-light:#FFF5EB;
-  --color-option-1:#7C7C7C;
-  --font-body:'Monserrat', sans-serif;
+  --color-primary: #000;
+  --color-primary-light: #292929;
+  --color-secondary: #fff;
+  --color-secondary-light: #fff5eb;
+  --color-option-1: #7c7c7c;
+  --color-option-2: #862626;
+  --color-option-3: #f2f2f2;
+  --font-body: 'Monserrat', sans-serif;
 }
 
 *,
@@ -26,7 +27,7 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
 }
 
 body {
@@ -36,8 +37,7 @@ body {
   line-height: 15px;
 }
 @media only screen and (max-width: 37.5em) {
-  html{
+  html {
     font-size: 50%;
   }
 }
-

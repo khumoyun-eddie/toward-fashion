@@ -1,0 +1,880 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/pdp/pdpPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+    ></script>
+
+    <script defer src="js/pdpTabs.js"></script>
+    <script defer src="js/pdpPage.js"></script>
+    <script defer src="js/pdpDropdown.js"></script>
+    <title>Toward - Products List Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navigation">
+          <div class="navigation__mobile-menu">
+            <img src="assets/icons/hamburger.svg" alt="" />
+          </div>
+          <div class="navigation__search-box">
+            <input type="text" placeholder="search" class="navigation__input" />
+            <img
+              src="assets/icons/icon-search.svg"
+              alt=""
+              class="icon-search"
+            />
+          </div>
+          <img src="assets/tomor.svg" class="navigation__logo" alt="" />
+          <div class="navigation__user">
+            <img
+              src="assets/icons/icon-avatar.svg"
+              class="navigation__icon"
+              alt=""
+            />
+            <img
+              src="assets/icons/icon-like.svg"
+              class="navigation__icon"
+              alt=""
+            />
+
+            <img
+              src="assets/icons/icon-cart.svg"
+              class="navigation__icon"
+              alt=""
+            />
+          </div>
+          <div class="navigation__mobile-menu">
+            <img src="assets/icons/icon-cart.svg" alt="" />
+          </div>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#">New</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Designers</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Clothes</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Shoes</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Accessories</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Bags</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Jewelery</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Beauty</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Editorial</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Sale</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="details">
+          <div class="details__swiper">
+            <div class="swiper swiper--thumbs">
+              <div class="thumb__wrapper swiper-wrapper">
+                <div class="thumb__img swiper-slide">
+                  <img src="./assets/product-image-1.png" alt="hero" />
+                </div>
+                <div class="thumb__img swiper-slide">
+                  <img src="./assets/product-image-2.png" alt="hero" />
+                </div>
+                <div class="thumb__img swiper-slide">
+                  <img src="./assets/product-image-3.png" alt="hero" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper mySwiper2">
+              <div class="myswiper__wrap swiper-wrapper">
+                <div class="hero__img swiper-slide">
+                  <img src="./assets/product-image-1.png" alt="hero" />
+                </div>
+                <div class="hero__img swiper-slide">
+                  <img src="./assets/product-image-2.png" alt="hero" />
+                </div>
+                <div class="hero__img swiper-slide">
+                  <img src="./assets/product-image-3.png" alt="hero" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="details__content">
+            <div class="pagination"></div>
+            <div class="details__header">
+              <h4 class="heading-text heading-4 heading-4--bold">
+                Alexander wang
+              </h4>
+            </div>
+            <div class="details__reviews">
+              <p>Zipper Mini Dress</p>
+              <img src="./assets/icons/icon-like.svg" alt="" />
+            </div>
+            <div class="details__price">$879.00</div>
+            <div class="details__financing">
+              <p>Pay as low as $49/month</p>
+              <a href="#" class="details__financing-link">Learn more</a>
+            </div>
+            <div class="details__sizes">
+              <input
+                type="text"
+                class="dropdown__input"
+                placeholder="Select Sizes"
+                readonly
+              />
+              <div class="dropdown__options">
+                <div class="dropdown__option" data-value="X-Large">X-Large</div>
+                <div class="dropdown__option" data-value="Large">Large</div>
+                <div class="dropdown__option" data-value="Medium">Medium</div>
+                <div class="dropdown__option" data-value="Small">Small</div>
+                <div class="dropdown__option" data-value="Extra-Small">
+                  Extra-Small
+                </div>
+              </div>
+            </div>
+            <div class="details__color">
+              <div class="details__color-header">
+                <p>Color: <b>Gold</b></p>
+              </div>
+              <div class="details__color-option">
+                <input
+                  type="radio"
+                  name="color-group"
+                  id="color"
+                  class="radio-input"
+                  checked
+                />
+                <label for="color">
+                  <span class="details__color-icon details__color-icon--1"
+                    >&nbsp;</span
+                  >
+                </label>
+              </div>
+              <div class="details__color-option">
+                <input
+                  type="radio"
+                  name="color-group"
+                  id="color2"
+                  class="radio-input"
+                />
+                <label for="color2">
+                  <span class="details__color-icon details__color-icon--2"
+                    >&nbsp;</span
+                  >
+                </label>
+              </div>
+              <div class="details__color-option">
+                <input
+                  type="radio"
+                  name="color-group"
+                  id="color3"
+                  class="radio-input"
+                />
+                <label for="color3">
+                  <span class="details__color-icon details__color-icon--3"
+                    >&nbsp;</span
+                  >
+                </label>
+              </div>
+            </div>
+            <a href="#" class="btn-lg">Add to bag</a>
+
+            <div class="details__tabs">
+              <ul class="nav nav-tabs">
+                <li class="active">
+                  <a class="tabs__link" href="#tab-1">Description</a>
+                </li>
+                <li class=""><a class="tabs__link" href="#tab-2">Detail</a></li>
+                <li class="">
+                  <a class="tabs__link" href="#tab-3">Shipping & Return</a>
+                </li>
+                <li class="">
+                  <a class="tabs__link" href="#tab-4">The Brand</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div id="tab-1" class="tab-pane active">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+                <div id="tab-2" class="tab-pane">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+                <div id="tab-3" class="tab-pane">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Fugit consequuntur nulla sequi libero recusandae nisi
+                    perspiciatis molestiae blanditiis itaque. Odit!
+                  </p>
+                </div>
+                <div id="tab-4" class="tab-pane">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Odit deserunt cum rerum nesciunt autem? Eveniet?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="details__sustainability">
+              <h6>Sustainability</h6>
+              <div class="details__financing">
+                <p>Made with 100% sustainable materials.</p>
+                <a href="#" class="details__financing-link">Learn more</a>
+              </div>
+              <ul class="details__sustainability-list">
+                <li class="details__sustainability-item">
+                  <img
+                    src="assets/icons/icon-bunny.svg"
+                    class="details__sustainability-icon"
+                    alt=""
+                  />
+                  <p>Cruelty-free</p>
+                </li>
+                <li class="details__sustainability-item">
+                  <img
+                    src="assets/icons/icon-recycle.svg"
+                    class="details__sustainability-icon"
+                    alt=""
+                  />
+                  <p>Recycled</p>
+                </li>
+                <li class="details__sustainability-item">
+                  <img
+                    src="assets/icons/icon-leaf.svg"
+                    class="details__sustainability-icon"
+                    alt=""
+                  />
+                  <p>Vegan</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="products">
+          <h2 class="heading-text heading-2">Pair It With</h2>
+          <div class="swiper products__list products__list--1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide products__list">
+                <div class="product__card">
+                  <div class="product__header">
+                    <img
+                      src="assets/product-image-3.png"
+                      class="product__img"
+                      alt=""
+                    />
+                    <img
+                      src="assets/icons/icon-like.svg"
+                      class="product__icon-nav"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="heading-text heading-5">brand Name</h4>
+                  <p class="product__text">Zipper Mini Dress</p>
+                  <p class="product__text">$879.00</p>
+                  <div class="product__color">
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color"
+                        class="radio-input"
+                        checked
+                      />
+                      <label for="color">
+                        <span class="product__color-icon product__color-icon--1"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color2"
+                        class="radio-input"
+                      />
+                      <label for="color2">
+                        <span class="product__color-icon product__color-icon--2"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color3"
+                        class="radio-input"
+                      />
+                      <label for="color3">
+                        <span class="product__color-icon product__color-icon--3"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide products__list">
+                <div class="product__card">
+                  <div class="product__header">
+                    <img
+                      src="assets/product-image-3.png"
+                      class="product__img"
+                      alt=""
+                    />
+                    <img
+                      src="assets/icons/icon-like.svg"
+                      class="product__icon-nav"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="heading-text heading-5">brand Name</h4>
+                  <p class="product__text">Zipper Mini Dress</p>
+                  <p class="product__text">$879.00</p>
+                  <div class="product__color">
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color"
+                        class="radio-input"
+                        checked
+                      />
+                      <label for="color">
+                        <span class="product__color-icon product__color-icon--1"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color2"
+                        class="radio-input"
+                      />
+                      <label for="color2">
+                        <span class="product__color-icon product__color-icon--2"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color3"
+                        class="radio-input"
+                      />
+                      <label for="color3">
+                        <span class="product__color-icon product__color-icon--3"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide products__list">
+                <div class="product__card">
+                  <div class="product__header">
+                    <img
+                      src="assets/product-image-3.png"
+                      class="product__img"
+                      alt=""
+                    />
+                    <img
+                      src="assets/icons/icon-like.svg"
+                      class="product__icon-nav"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="heading-text heading-5">brand Name</h4>
+                  <p class="product__text">Zipper Mini Dress</p>
+                  <p class="product__text">$879.00</p>
+                  <div class="product__color">
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color"
+                        class="radio-input"
+                        checked
+                      />
+                      <label for="color">
+                        <span class="product__color-icon product__color-icon--1"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color2"
+                        class="radio-input"
+                      />
+                      <label for="color2">
+                        <span class="product__color-icon product__color-icon--2"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color3"
+                        class="radio-input"
+                      />
+                      <label for="color3">
+                        <span class="product__color-icon product__color-icon--3"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide products__list">
+                <div class="product__card">
+                  <div class="product__header">
+                    <img
+                      src="assets/product-image-3.png"
+                      class="product__img"
+                      alt=""
+                    />
+                    <img
+                      src="assets/icons/icon-like.svg"
+                      class="product__icon-nav"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="heading-text heading-5">brand Name</h4>
+                  <p class="product__text">Zipper Mini Dress</p>
+                  <p class="product__text">$879.00</p>
+                  <div class="product__color">
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color"
+                        class="radio-input"
+                        checked
+                      />
+                      <label for="color">
+                        <span class="product__color-icon product__color-icon--1"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color2"
+                        class="radio-input"
+                      />
+                      <label for="color2">
+                        <span class="product__color-icon product__color-icon--2"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color3"
+                        class="radio-input"
+                      />
+                      <label for="color3">
+                        <span class="product__color-icon product__color-icon--3"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <h2 class="heading-text heading-2">You might also like</h2>
+          <div class="swiper products__list products__list--2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide products__list">
+                <div class="product__card">
+                  <div class="product__header">
+                    <img
+                      src="assets/product-image-3.png"
+                      class="product__img"
+                      alt=""
+                    />
+                    <img
+                      src="assets/icons/icon-like.svg"
+                      class="product__icon-nav"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="heading-text heading-5">brand Name</h4>
+                  <p class="product__text">Zipper Mini Dress</p>
+                  <p class="product__text">$879.00</p>
+                  <div class="product__color">
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color"
+                        class="radio-input"
+                        checked
+                      />
+                      <label for="color">
+                        <span class="product__color-icon product__color-icon--1"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color2"
+                        class="radio-input"
+                      />
+                      <label for="color2">
+                        <span class="product__color-icon product__color-icon--2"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color3"
+                        class="radio-input"
+                      />
+                      <label for="color3">
+                        <span class="product__color-icon product__color-icon--3"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide products__list">
+                <div class="product__card">
+                  <div class="product__header">
+                    <img
+                      src="assets/product-image-3.png"
+                      class="product__img"
+                      alt=""
+                    />
+                    <img
+                      src="assets/icons/icon-like.svg"
+                      class="product__icon-nav"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="heading-text heading-5">brand Name</h4>
+                  <p class="product__text">Zipper Mini Dress</p>
+                  <p class="product__text">$879.00</p>
+                  <div class="product__color">
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color"
+                        class="radio-input"
+                        checked
+                      />
+                      <label for="color">
+                        <span class="product__color-icon product__color-icon--1"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color2"
+                        class="radio-input"
+                      />
+                      <label for="color2">
+                        <span class="product__color-icon product__color-icon--2"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color3"
+                        class="radio-input"
+                      />
+                      <label for="color3">
+                        <span class="product__color-icon product__color-icon--3"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide products__list">
+                <div class="product__card">
+                  <div class="product__header">
+                    <img
+                      src="assets/product-image-3.png"
+                      class="product__img"
+                      alt=""
+                    />
+                    <img
+                      src="assets/icons/icon-like.svg"
+                      class="product__icon-nav"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="heading-text heading-5">brand Name</h4>
+                  <p class="product__text">Zipper Mini Dress</p>
+                  <p class="product__text">$879.00</p>
+                  <div class="product__color">
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color"
+                        class="radio-input"
+                        checked
+                      />
+                      <label for="color">
+                        <span class="product__color-icon product__color-icon--1"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color2"
+                        class="radio-input"
+                      />
+                      <label for="color2">
+                        <span class="product__color-icon product__color-icon--2"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color3"
+                        class="radio-input"
+                      />
+                      <label for="color3">
+                        <span class="product__color-icon product__color-icon--3"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide products__list">
+                <div class="product__card">
+                  <div class="product__header">
+                    <img
+                      src="assets/product-image-3.png"
+                      class="product__img"
+                      alt=""
+                    />
+                    <img
+                      src="assets/icons/icon-like.svg"
+                      class="product__icon-nav"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="heading-text heading-5">brand Name</h4>
+                  <p class="product__text">Zipper Mini Dress</p>
+                  <p class="product__text">$879.00</p>
+                  <div class="product__color">
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color"
+                        class="radio-input"
+                        checked
+                      />
+                      <label for="color">
+                        <span class="product__color-icon product__color-icon--1"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color2"
+                        class="radio-input"
+                      />
+                      <label for="color2">
+                        <span class="product__color-icon product__color-icon--2"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color3"
+                        class="radio-input"
+                      />
+                      <label for="color3">
+                        <span class="product__color-icon product__color-icon--3"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide products__list">
+                <div class="product__card">
+                  <div class="product__header">
+                    <img
+                      src="assets/product-image-3.png"
+                      class="product__img"
+                      alt=""
+                    />
+                    <img
+                      src="assets/icons/icon-like.svg"
+                      class="product__icon-nav"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="heading-text heading-5">brand Name</h4>
+                  <p class="product__text">Zipper Mini Dress</p>
+                  <p class="product__text">$879.00</p>
+                  <div class="product__color">
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color"
+                        class="radio-input"
+                        checked
+                      />
+                      <label for="color">
+                        <span class="product__color-icon product__color-icon--1"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color2"
+                        class="radio-input"
+                      />
+                      <label for="color2">
+                        <span class="product__color-icon product__color-icon--2"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                    <div class="product__color-option">
+                      <input
+                        type="radio"
+                        name="color-group"
+                        id="color3"
+                        class="radio-input"
+                      />
+                      <label for="color3">
+                        <span class="product__color-icon product__color-icon--3"
+                          >&nbsp;</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </section>
+      </main>
+       <footer class="footer">
+        <div class="footer__socials">
+          <img
+            src="assets/icons/icon-instagram.svg"
+            class="footer__icon"
+            alt=""
+          />
+          <img
+            src="assets/icons/icon-facebook.svg"
+            class="footer__icon"
+            alt=""
+          />
+        </div>
+        <div class="footer__contact">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="footer__input"
+            placeholder="Write your email ..."
+          />
+          <label for="email">
+            <a href="#" class="btn btn--small btn--light">Join the family</a>
+          </label>
+        </div>
+        <p class="footer__text">
+          The only way to discover exclusive deals, new product launches and
+          more
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+@import '../style.css';
+.cart {
+  width: 90rem;
+  margin: 0 auto;
+  padding: 4rem;
+}
+.cart h2{
+    text-align: center;
+    text-transform: capitalize;
+}
+.cart__content {
+  margin-top: 3.2rem;
+}
+.cart__content > * {
+  display: grid;
+  grid-template-columns: 30rem min-content 9.8rem min-content;
+  column-gap: 11rem;
+  padding-bottom: 1.2rem;
+  padding-top: 2.4rem;
+  border-bottom: 1px solid var(--color-option-3);
+}
+.cart__header h6:not(:nth-of-type(1)){
+    text-align: center;
+}
+.cart__product-img {
+  width: 50%;
+}
+.cart__product-details {
+  display: flex;
+  column-gap: 1.6rem;
+  line-height: 159.5%;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.cart__product-info {
+  padding-top: 1rem;
+}
+.cart__product-info > * {
+  margin-bottom: 3px;
+}
+.btn-qty {
+  width: 9.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-secondary);
+  padding: 8px 12px;
+  outline: none;
+  border: 1px solid var(--color-option-3);
+}
+.cart__product-control {
+  grid-column: 3/5;
+  justify-self: end;
+}
+.cart__product-link {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.cart__product-link:not(:last-of-type){
+    margin-right: 8px;
+}
+.btn-qty__icon{
+    cursor: pointer;
+}
+
+.cart__checkout{
+    width: 40%;
+    margin-left: auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.cart__checkout-header{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 8px;
+}
+.cart__affirm{
+    margin-top: 8px;
+    margin-bottom: 3rem;
+}
+.cart__affirm-icon{
+    width: 3.8rem;
+    height: 1.6rem;
+
+}
+
+@media only screen and (max-width: 37.5em) {
+    .cart{
+        width:100%;
+        padding: 1.6rem;
+    }
+    .cart__content .cart__product{
+        grid-template-columns: 1fr min-content;
+    }
+    .cart__header{
+        display: none;
+    }
+    .cart__product-total{
+        display:none;
+    }
+    .cart__product-details{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .cart__product-price{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .cart__product-qty{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: center;
+    }
+    .cart__product-control{
+        grid-column: 1/3;
+        justify-self: center;
+        grid-row: 3/4;
+    }
+    .cart__checkout{
+        width: 100%;
+    }
+}

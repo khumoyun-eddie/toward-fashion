@@ -28,6 +28,9 @@
   font-size: 2.4rem;
   font-weight: 500;
 }
+.heading-4--bold{
+  font-weight: 700;
+}
 .heading-4--light {
   color: var(--color-secondary-light);
 }
@@ -41,6 +44,10 @@
 }
 .heading-6--light{
   font-weight: 300;
+}
+.bold-text{
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 @media only screen and (max-width: 37.5em) {
   .heading-1 {

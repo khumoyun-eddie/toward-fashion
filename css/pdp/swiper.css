@@ -1,0 +1,70 @@
+.details__swiper {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+.thumb__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px !important;
+  height: 135px;
+}
+
+.swiper--thumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 40px;
+  padding-left: 40px;
+  /* height: 100%; */
+}
+
+.thumb__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  cursor: pointer;
+  min-width: 40px;
+  width: 100%;
+  max-height: 40px;
+  height: 100%;
+}
+
+.thumb__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #cacaca;
+}
+
+.mySwiper2 {
+  width: 90%;
+  max-height: 900px;
+  margin-left: auto;
+}
+
+.hero__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myswiper__wrap {
+  display: flex;
+  align-items: center;
+
+}
+
+.hero__img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .swiper--thumbs{
+    display: none;
+  }
+}

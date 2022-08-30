@@ -1,0 +1,222 @@
+@import '../style.css';
+@import './swiper.css';
+@import '../productCard.css';
+@import './dropdown.css';
+@import './tabs.css';
+
+.details {
+  display: flex;
+  height: fit-content;
+}
+.details__swiper {
+  width: 50%;
+}
+.details__content {
+  line-height: 159.5%;
+  position: relative;
+  width: 40.5rem;
+  background-color: var(--color-secondary);
+  margin: 3.9rem auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.details__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+.details__reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.details__price {
+  margin-bottom: 8px;
+}
+.details__financing {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 1rem;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+.details__financing-link{
+    color: var(--color-primary);
+    font-weight: bold;
+}
+.details__financing img {
+  width: 4.1rem;
+  height: 1.7rem;
+}
+.details__color {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 2.4rem;
+  margin-top: 1rem;
+}
+.details__color-header {
+  width: 100%;
+}
+.details__color-option {
+}
+.details__color label {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  cursor: pointer;
+}
+.details__color-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+.radio-input {
+  display: none;
+}
+.radio-input:disabled + label {
+  cursor: not-allowed;
+}
+.radio-input:checked + label {
+  outline: 1px solid var(--color-primary);
+}
+.details__color-icon--1 {
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-option-1);
+}
+.details__color-icon--2 {
+  background-color: var(--color-primary);
+}
+.details__color-icon--3 {
+  background-color: var(--color-option-2);
+}
+.pagination {
+  display: none;
+}
+
+.details__input-group:not(:first-of-type) {
+  margin-top: 1.6rem;
+}
+.details__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.6rem;
+  font-size: 1.4rem;
+  background-color: var(--color-secondary-light);
+}
+.details__checkbox {
+  appearance: none;
+}
+.details__tabs {
+  margin-top: 4rem;
+}
+.btn-lg {
+  margin-top: 2.8rem;
+}
+
+.details__checkbox::after {
+  content: url(../../assets/icons/check.svg);
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-secondary-light);
+  border: 1px solid var(--color-secondary-dark);
+  padding: 3px;
+  display: inline;
+  margin-right: 8px;
+}
+.details__checkbox:checked .details__checkbox::after {
+}
+
+@media only screen and (max-width: 37.5em) {
+  .details {
+    display: block;
+    height: fit-content;
+  }
+  .details__swiper {
+    width: 100%;
+  }
+  .details__content {
+    width: 100%;
+    padding: 0 2rem;
+  }
+ 
+  .pagination {
+    display: inline;
+  }
+}
+.swiper-button-next,.swiper-button-prev{
+    color: var(--color-primary) !important;
+}
+.products {
+  height: fit-content;
+  padding: 6.2rem 0 6.2rem 4rem;
+}
+.products__list {
+  height: 63.1rem;
+  width: 100%;
+  overflow: hidden;
+}
+.products__list--1 .swiper-button-next,.products__list--1 .swiper-button-prev{
+    display: none !important;
+}
+.products__list .product__card .product__header .product__img {
+  height: auto;
+}
+.products h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 5.5rem;
+  margin-top: 7.2rem;
+  
+}
+.details__sustainability{
+    margin-top: 2.4rem;
+    padding: 2.4rem;
+    border: 1px solid var(--color-option-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details__sustainability h6{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 160%;
+}
+.details__sustainability p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.details__sustainability-list{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 2.4rem;
+}
+.details__sustainability-icon{
+    width: 4rem;
+    height: 4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .products{
+        padding: 0;
+    }
+    .products__list--1 .swiper-button-next, .products__list--1 .swiper-button-prev{
+        display: block !important;
+    }
+    .products__list{
+        height: 43rem
+    }
+.products h2 {
+    margin-top: 3.375rem;
+    margin-bottom: 2.75rem;
+}
+}

@@ -9,3 +9,15 @@
   display: inline-block;
   margin-left: 1rem;
 }
+
+.btn-lg{
+  width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.6rem;
+}

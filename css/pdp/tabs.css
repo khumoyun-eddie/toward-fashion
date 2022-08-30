@@ -1,0 +1,51 @@
+.nav-tabs {
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-tabs.active > a,a:focus {
+  color: var(--color-primary);
+  opacity: 1;
+  cursor: default;
+  border-bottom: 1px solid #000;
+}
+
+.nav-tabs li a {
+  float: left;
+  padding-bottom: 4px;
+  margin-right: .3rem;
+}
+
+
+.tab-content {
+  float: left;
+  width: 100%;
+  margin-top: 1.6rem;
+}
+.tab-content .tab-pane {
+  display: none;
+}
+
+.tab-pane p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 159.5%;
+}
+.tab-content .tab-pane .active {
+  display: block;
+  padding: 2.5% 3.5%;
+  background-color: #efefef;
+}
+
+.tab-content .active {
+  display: block;
+}
+
+.tabs__link{
+  text-decoration: none;
+  color: var(--color-primary);
+  opacity: .3;
+}
